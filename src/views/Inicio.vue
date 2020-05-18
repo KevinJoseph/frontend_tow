@@ -23,7 +23,7 @@ export default {
   },
   mounted() {
     //console.log({ headers: { token: localStorage.getItem('token')}});
-    axios.get('http://localhost:3000/users/', { headers: { token: localStorage.getItem('token')}})
+    axios.get('https://immense-journey-88777.herokuapp.com/users/', { headers: { token: localStorage.getItem('token')}})
       .then(res => {
           console.log(res.data);
         this.name = res.data.user.name;

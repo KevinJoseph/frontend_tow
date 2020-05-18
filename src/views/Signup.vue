@@ -26,7 +26,7 @@ export default {
         email: this.email,
         password: this.password
       }
-      axios.post('http://localhost:3000/auth/signup', newUser)
+      axios.post('https://immense-journey-88777.herokuapp.com/auth/signup', newUser)
         .then(res => {
           this.error = '';
         

@@ -23,12 +23,13 @@ export default {
         email: this.email,
         password: this.password
       }
-      axios.post('http://localhost:3000/auth/login', user)
+      axios.post('https://immense-journey-88777.herokuapp.com/auth/login', user)
         .then(res => {
           //if successfull
           if (res.status === 200) {
             localStorage.setItem('token', res.data.token);
-            this.$router.push('/');
+            //console.log(res.data.token);
+            this.$router.push('/platform');
           }
         }, err => {
           console.log(err.response);
