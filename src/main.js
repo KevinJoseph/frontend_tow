@@ -6,10 +6,10 @@ import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-VueAxios.use(VueAxios, axios)
+//VueAxios.use(VueAxios, axios)
 
 // Agregamos la URL base de nuestra API
-axios.defaults.baseURL = 'https://immense-journey-88777.herokuapp.com/';
+//axios.defaults.baseURL = 'https://immense-journey-88777.herokuapp.com/';
 
 // Import the styles directly. (Or you could add them via script tags.)
 import 'bootstrap/dist/css/bootstrap.css';
